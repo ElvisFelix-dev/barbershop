@@ -5,7 +5,7 @@ export const Container = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   background-color: transparent;
 
   @media (max-width: 768px) {
@@ -43,17 +43,23 @@ export const NavItem = styled.li`
   }
 
   a {
-    color: #1e5292;
+    color: #c38b58;
   }
 
   a:hover {
-    color: ${shade(0.3, '#1e5292')};
+    color: ${shade(0.3, '#c38b58')};
   }
 `
 
 export const PhoneNumber = styled.a`
   margin-right: 15px;
   color: #fffbf6;
+  align-items: center;
+  font-family: 'Numans';
+
+  svg {
+    margin-right: 10px;
+  }
 
   transition: ease-in-out 0.3s;
 

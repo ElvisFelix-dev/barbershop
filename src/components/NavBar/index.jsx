@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 
 import imgLogo from '../../assets/imgLogo.png'
 import {
@@ -25,7 +25,9 @@ export function NavBar() {
   }
   return (
     <Container>
-      <Logo src={imgLogo} alt="Logo" />
+      <Link to="/">
+        <Logo src={imgLogo} alt="Logo" />
+      </Link>
       <HamburgerMenu onClick={toggleMenu}>
         <HamburgerIcon isOpen={isMenuOpen} />
         <HamburgerIcon isOpen={isMenuOpen} />
@@ -69,7 +71,8 @@ export function NavBar() {
         </NavItem>
       </NavMenu>
       <PhoneNumber href="tel:+55 11 1234-5678" onClick={closeMenu}>
-        Telefone: (11) 1234-5678
+        <BsFillTelephoneFill />
+        (11) 1234-5678
       </PhoneNumber>
     </Container>
   )

@@ -1,32 +1,45 @@
-import { FaHeart, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import {
+  FaHeart,
+  FaTwitter,
+  FaInstagram,
+  FaWhatsapp,
+  FaGithub,
+  FaLinkedin,
+} from 'react-icons/fa'
 
-import './styles.css'
+import {
+  FooterContainer,
+  FooterContent,
+  FooterLinks,
+  FooterText,
+  IconLink,
+  SocialIcons,
+} from './styles'
 
 export function Footer() {
   return (
-    <>
-      <footer className="footer">
-        <div className="footer__social">
-          <a
-            href="https://www.instagram.com/2system_dev/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram size={20} color="#2c5282" />
-          </a>
-
-          <a
-            href="https://wa.me/5516996318063"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaWhatsapp size={20} color="#2c5282" />
-          </a>
-        </div>
-        <p className="footer__copyright">
-          Desenvolvido por 2System <FaHeart size={10} color="#2c5282" />
-        </p>
-      </footer>
-    </>
+    <FooterContainer>
+      <FooterContent>
+        <FooterLinks>
+          <SocialIcons>
+            <IconLink href="https://www.facebook.com">
+              <FaWhatsapp />
+            </IconLink>
+            <IconLink href="https://www.twitter.com">
+              <FaGithub />
+            </IconLink>
+            <IconLink href="https://www.twitter.com">
+              <FaLinkedin />
+            </IconLink>
+            <IconLink href="https://www.instagram.com">
+              <FaInstagram />
+            </IconLink>
+          </SocialIcons>
+        </FooterLinks>
+        <FooterText>
+          Desenvolvido por 2System &copy; {new Date().getFullYear()}
+        </FooterText>
+      </FooterContent>
+    </FooterContainer>
   )
 }
