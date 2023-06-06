@@ -5,7 +5,7 @@
 <br />
 <div align="center" id='topo'>
   <a href="">
-    <img src="src/assets/imgLogo.png" alt="Logo" width="200" height="200">
+    <img src="src/assets/imgLogo.png" alt="Logo" width="200" height="350">
   </a>
 
   <h3 align="center">Barber Shop</h3>
