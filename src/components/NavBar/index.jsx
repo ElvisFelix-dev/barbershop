@@ -14,10 +14,10 @@ import {
 } from './styles'
 
 export function NavBar() {
-  const [isMenuOpen, setMenuOpen] = useState(false)
+  const [ismenuopen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen)
+    setMenuOpen(!ismenuopen)
   }
 
   const closeMenu = () => {
@@ -29,11 +29,11 @@ export function NavBar() {
         <Logo src={imgLogo} alt="Logo" />
       </Link>
       <HamburgerMenu onClick={toggleMenu}>
-        <HamburgerIcon isOpen={isMenuOpen} />
-        <HamburgerIcon isOpen={isMenuOpen} />
-        <HamburgerIcon isOpen={isMenuOpen} />
+        <HamburgerIcon isopen={ismenuopen} />
+        <HamburgerIcon isopen={ismenuopen} />
+        <HamburgerIcon isopen={ismenuopen} />
       </HamburgerMenu>
-      <NavMenu isMenuOpen={isMenuOpen}>
+      <NavMenu ismenuopen={ismenuopen}>
         <NavItem>
           <Link to="/" onClick={closeMenu}>
             Home

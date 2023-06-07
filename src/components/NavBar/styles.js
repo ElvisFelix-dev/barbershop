@@ -26,7 +26,7 @@ export const NavMenu = styled.ul`
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    display: ${({ isMenuOpen }) => (isMenuOpen ? 'flex' : 'none')};
+    display: ${({ ismenuopen }) => (ismenuopen ? 'flex' : 'none')};
   }
 `
 
@@ -97,8 +97,8 @@ export const HamburgerIcon = styled.div`
     margin-bottom: 0;
   }
 
-  ${({ isOpen }) =>
-    isOpen &&
+  ${({ isopen }) =>
+    isopen &&
     `
     &:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
