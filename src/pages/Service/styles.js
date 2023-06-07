@@ -6,6 +6,11 @@ export const Container = styled.div`
   justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Card = styled.div`
@@ -18,6 +23,10 @@ export const Card = styled.div`
   border-radius: 5px;
   background-color: #181818;
   box-shadow: 0 2px 4px #c38b58;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 export const TitleHair = styled.p`

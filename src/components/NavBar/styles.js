@@ -13,6 +13,8 @@ export const Container = styled.nav`
   }
 `
 
+Container.displayName = 'Container'
+
 export const Logo = styled.img`
   height: 40px;
   width: auto;
@@ -26,9 +28,11 @@ export const NavMenu = styled.ul`
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    display: ${({ ismenuopen }) => (ismenuopen ? 'flex' : 'none')};
+    display: ${({ ismenuopen }) => (ismenuopen === 'true' ? 'flex' : 'none')};
   }
 `
+
+NavMenu.displayName = 'NavMenu'
 
 export const NavItem = styled.li`
   margin-right: 20px;
@@ -98,8 +102,8 @@ export const HamburgerIcon = styled.div`
   }
 
   ${({ isopen }) =>
-    isopen &&
-    `
+    isopen === 'true'
+      ? `
     &:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
     }
@@ -111,5 +115,6 @@ export const HamburgerIcon = styled.div`
     &:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
-  `}
+  `
+      : ''};
 `
