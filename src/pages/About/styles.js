@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const ContainerAbout = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,5 +108,7 @@ export const BoxDados = styled.div`
   }
 `
 
-export const BoxTitle = styled.h3``
+export const BoxTitle = styled.h3`
+  font-family: 'Numans';
+`
 export const BoxSubTitle = styled.p``

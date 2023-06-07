@@ -1,17 +1,16 @@
 import CountUp from 'react-countup'
 
 import {
-  Container,
   Description,
   Image,
   ImageContainer,
   Subtitle,
   TextContainer,
-  Overlay,
   BoxDados,
   BoxInfo,
   BoxSubTitle,
   BoxTitle,
+  ContainerAbout,
 } from './styles'
 
 import { Footer } from '../../components/Footer'
@@ -21,9 +20,9 @@ import imgProfile from '../../assets/imgProfile.jpg'
 export function About() {
   return (
     <>
-      <Container>
+      <ContainerAbout>
         <ImageContainer>
-          <Overlay /> <Image src={imgProfile} alt="Image" />
+          <Image src={imgProfile} alt="Image" />
         </ImageContainer>
         <TextContainer>
           <Subtitle>Sobre-nós</Subtitle>
@@ -68,7 +67,7 @@ export function About() {
             </BoxDados>
           </BoxInfo>
         </TextContainer>
-      </Container>
+      </ContainerAbout>
       <Footer />
     </>
   )

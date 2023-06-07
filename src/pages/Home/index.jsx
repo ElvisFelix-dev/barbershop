@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import {
   Container,
   Button,
@@ -31,7 +33,9 @@ export function Home() {
             oferece uma experiência excepcional, onde a arte de aparar, modelar
             e transformar é realizada com maestria.
           </Description>
-          <Button>Book now</Button>
+          <Button>
+            <Link to="/booking">Marcar Horário</Link>
+          </Button>
         </TextContainer>
         <ImageContainer>
           <Overlay /> <Image src={imgBarber} alt="Image" />

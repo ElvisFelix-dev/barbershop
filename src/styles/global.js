@@ -21,6 +21,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: #FFFBF6;
   }
 
 
@@ -28,5 +29,5 @@ export default createGlobalStyle`
     list-style: none;
   }
 
-  
+
 `

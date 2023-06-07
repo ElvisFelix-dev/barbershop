@@ -11,7 +11,6 @@ import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 import { Gallery } from './pages/Gallery'
 import { Service } from './pages/Service'
-import { Feedback } from './pages/Feedback'
 import { Booking } from './pages/Booking'
 
 export function App() {
@@ -26,7 +25,6 @@ export function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/feedback" element={<Feedback />} />
           <Route path="/booking" element={<Booking />} />
         </Routes>
         <ToastContainer

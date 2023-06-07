@@ -29,11 +29,11 @@ export function NavBar() {
         <Logo src={imgLogo} alt="Logo" />
       </Link>
       <HamburgerMenu onClick={toggleMenu}>
-        <HamburgerIcon isopen={ismenuopen} />
-        <HamburgerIcon isopen={ismenuopen} />
-        <HamburgerIcon isopen={ismenuopen} />
+        <HamburgerIcon isopen={ismenuopen.toString()} />
+        <HamburgerIcon isopen={ismenuopen.toString()} />
+        <HamburgerIcon isopen={ismenuopen.toString()} />
       </HamburgerMenu>
-      <NavMenu ismenuopen={ismenuopen}>
+      <NavMenu ismenuopen={ismenuopen.toString()} onClick={closeMenu}>
         <NavItem>
           <Link to="/" onClick={closeMenu}>
             Home
@@ -54,11 +54,7 @@ export function NavBar() {
             Serviços
           </Link>
         </NavItem>
-        <NavItem>
-          <Link to="/feedback" onClick={closeMenu}>
-            Feedback
-          </Link>
-        </NavItem>
+
         <NavItem>
           <Link to="/gallery" onClick={closeMenu}>
             Galeria
