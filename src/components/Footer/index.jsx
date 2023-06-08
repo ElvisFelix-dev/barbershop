@@ -22,16 +22,32 @@ export function Footer() {
       <FooterContent>
         <FooterLinks>
           <SocialIcons>
-            <IconLink href="https://www.facebook.com">
+            <IconLink
+              href="https://wa.me/5516996318063"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaWhatsapp />
             </IconLink>
-            <IconLink href="https://www.twitter.com">
+            <IconLink
+              href="https://github.com/ElvisFelix-dev"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </IconLink>
-            <IconLink href="https://www.twitter.com">
+            <IconLink
+              href="https://www.linkedin.com/in/elvis-felix/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </IconLink>
-            <IconLink href="https://www.instagram.com">
+            <IconLink
+              href="https://www.instagram.com/2system_dev/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram />
             </IconLink>
           </SocialIcons>

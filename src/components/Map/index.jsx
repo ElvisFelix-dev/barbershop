@@ -12,8 +12,8 @@ const mapContainerStyle = {
 }
 
 const center = {
-  lat: -21.6190905,
-  lng: -48.368469,
+  lat: -23.5620086,
+  lng: -46.667409,
 }
 
 const darkMapOptions = {
@@ -95,7 +95,8 @@ export function Map() {
         options={mapOptions}
       >
         <Marker
-          position={{ lat: -21.6190905, lng: -48.368469 }}
+          onClick={() => handleMarkerClick(center)}
+          position={{ lat: -23.5620086, lng: -46.667409 }}
           title="BarberShop"
         />
         {selectedMarker && (

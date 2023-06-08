@@ -124,7 +124,7 @@ export const SocialLinks = styled.div`
     transition: ease-in-out 0.3s;
 
     &:hover {
-      color: ${shade(0.3, '#c38b58')};
+      text-decoration: underline;
     }
   }
 `
