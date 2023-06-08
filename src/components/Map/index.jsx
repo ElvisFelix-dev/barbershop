@@ -91,11 +91,11 @@ export function Map() {
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={center}
-        zoom={14}
+        zoom={16}
         options={mapOptions}
       >
         <Marker
-          onClick={() => handleMarkerClick(center)}
+          
           position={{ lat: -23.5620086, lng: -46.667409 }}
           title="BarberShop"
         />

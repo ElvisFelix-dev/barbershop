@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { FiClock } from 'react-icons/fi'
 import { IoLocationOutline } from 'react-icons/io5'
 import {
@@ -93,7 +95,9 @@ export function Contact() {
             </a>
           </SocialLinks>
           <Button title="Clica para marcar horario para corte" type="submit">
+            <Link to="/booking">
             Marcar horário
+            </Link>
           </Button>
         </ContactContainer>
       </Container>
