@@ -91,7 +91,7 @@ export function Map() {
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={center}
-        zoom={18}
+        zoom={16}
         options={mapOptions}
       >
         <Marker
