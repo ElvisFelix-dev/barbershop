@@ -95,9 +95,7 @@ export function Contact() {
             </a>
           </SocialLinks>
           <Button title="Clica para marcar horario para corte" type="submit">
-            <Link to="/booking">
-            Marcar horário
-            </Link>
+            <Link to="/booking">Marcar horário</Link>
           </Button>
         </ContactContainer>
       </Container>
