@@ -20,9 +20,12 @@ export const MapContainer = styled.div`
   display: flex;
 
   height: 600px;
+  width: 100vw;
 
   @media (max-width: 768px) {
-    width: 100vh;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    align-items: center;
+    justify-content: center;
   }
 `
 
