@@ -83,6 +83,10 @@ export const Button = styled.button`
   &:hover {
     background-color: #a77144;
   }
+
+  @media (max-width: 768px) {
+    width: 350px;
+  }
 `
 export const ButtonContainer = styled.div`
   display: flex;

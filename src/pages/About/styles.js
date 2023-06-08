@@ -96,6 +96,7 @@ export const BoxInfo = styled.div`
 export const BoxDados = styled.div`
   text-align: center;
   color: #dfdcda;
+  width: 180px;
 
   padding: 10px;
   border: 2px solid #c38b58;

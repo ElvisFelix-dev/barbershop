@@ -112,27 +112,27 @@ export function Service() {
             ))}
           </Card>
           <Card>
-            <TitleHair>Outros Serviços</TitleHair>
-            {otherServices.map((service, index) => (
+            <TitleHair>Cortes de Cabelo</TitleHair>
+            {haircuts.map((haircut, index) => (
               <div key={index}>
                 <Box>
-                  <Title>{service.name}</Title>
-                  <Price>{service.price}</Price>
+                  <Title>{haircut.name}</Title>
+                  <Price>{haircut.price}</Price>
                 </Box>
-                <Description>{service.description}</Description>
+                <Description>{haircut.description}</Description>
               </div>
             ))}
           </Card>
 
           <Card>
-            <TitleHair>Outros Serviços</TitleHair>
-            {otherServices.map((service, index) => (
+            <TitleHair>Cortes de Barba</TitleHair>
+            {beardCuts.map((beardCut, index) => (
               <div key={index}>
                 <Box>
-                  <Title>{service.name}</Title>
-                  <Price>{service.price}</Price>
+                  <Title>{beardCut.name}</Title>
+                  <Price>{beardCut.price}</Price>
                 </Box>
-                <Description>{service.description}</Description>
+                <Description>{beardCut.description}</Description>
               </div>
             ))}
           </Card>
