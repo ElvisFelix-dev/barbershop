@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { shade } from 'polished'
 
 export const Container = styled.div`
   display: flex;
@@ -89,6 +90,14 @@ export const ContactContent = styled.div`
     margin-bottom: 20px;
     color: #8d8b8a;
     align-items: center;
+
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      /* Estilos quando o elemento está em hover */
+      /* Por exemplo, alterar a cor do texto */
+      color: ${shade(0.3, '#8d8b8a')};
+    }
   }
 
   svg {
@@ -105,6 +114,18 @@ export const SocialLinks = styled.div`
 
   a {
     padding: 15px;
+
+    transition: ease-in-out 0.3s;
+  }
+
+  svg {
+    color: #c38b58;
+
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      color: ${shade(0.3, '#c38b58')};
+    }
   }
 `
 

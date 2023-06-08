@@ -70,21 +70,25 @@ export function Contact() {
               (11) 99999-9999
             </a>
 
-            <a href="mailto:contato@barber.com">
+            <a
+              href="mailto:contato@barber.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaEnvelope size={20} color="#c38b58" />
               contato@barber.com
             </a>
           </ContactContent>
           <SocialLinks>
             <p>Nossas redes sociais</p>
-            <a href="">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={20} color="#c38b58" />
             </a>
-            <a href="">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <FaPinterest size={20} color="#c38b58" />
             </a>
 
-            <a href="">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={20} color="#c38b58" />
             </a>
           </SocialLinks>
