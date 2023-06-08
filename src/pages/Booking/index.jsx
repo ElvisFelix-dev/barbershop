@@ -61,6 +61,7 @@ export function Booking() {
             <h1>Marque seu horário</h1>
 
             <input
+              title="Informe como deseja ser chamado"
               type="text"
               id="name"
               placeholder="Nome completo"
@@ -70,6 +71,7 @@ export function Booking() {
             />
 
             <input
+              title="Informe seu whatsaap"
               type="tel"
               id="phone"
               placeholder="Seu Whatsaap"
@@ -79,6 +81,7 @@ export function Booking() {
             />
 
             <input
+              title="Informe seu email para contato"
               type="email"
               id="email"
               placeholder="Melhor email"
@@ -87,6 +90,7 @@ export function Booking() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
+              title="Informe a data desejada para o corte"
               type="date"
               placeholder="Escolha uma data"
               value={date}
@@ -94,6 +98,7 @@ export function Booking() {
               onChange={(e) => setDate(e.target.value)}
             />
             <input
+              title="Informe o horario desejado para o corte"
               type="time"
               placeholder="Escolha o horário"
               value={hour}
@@ -103,7 +108,12 @@ export function Booking() {
             <br />
             <span>*Iremos confirmar pelo Whatsaap/Email*</span>
 
-            <Button type="submit">Marcar horário</Button>
+            <Button
+              title="Clica para marcar o horario para o corte"
+              type="submit"
+            >
+              Marcar horário
+            </Button>
           </form>
         </Content>
 

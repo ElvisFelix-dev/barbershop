@@ -33,7 +33,7 @@ export function Home() {
             oferece uma experiência excepcional, onde a arte de aparar, modelar
             e transformar é realizada com maestria.
           </Description>
-          <Button>
+          <Button title="Clica para agendar um horario">
             <Link to="/booking">Marcar Horário</Link>
           </Button>
         </TextContainer>

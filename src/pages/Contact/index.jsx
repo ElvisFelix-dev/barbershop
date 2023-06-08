@@ -32,7 +32,7 @@ export function Contact() {
   return (
     <>
       <Container>
-        <MapContainer>
+        <MapContainer title="Mapa da nossa localização">
           <Map />
         </MapContainer>
         <ContactContainer>
@@ -43,14 +43,14 @@ export function Contact() {
               <FiClock size={20} />
             </ScheduleHead>
 
-            <ScheduleContent>
+            <ScheduleContent title="Dias da semana em que nós trabalhamos">
               <p>Segunda a Sexta</p> <span>10hrs - 17hrs</span>
             </ScheduleContent>
             <ScheduleContent>
               <p>Sábados</p> <span>10hrs - 16hrs</span>
             </ScheduleContent>
           </ScheduleContainer>
-          <AddressContainer>
+          <AddressContainer title="Nosso endereço">
             <ScheduleHead>
               Endereço
               <IoLocationOutline size={20} />
@@ -60,7 +60,7 @@ export function Contact() {
             </AddressContent>
           </AddressContainer>
 
-          <ContactContent>
+          <ContactContent title="Meios de comunicação da nossa barbearia">
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp size={20} color="#c38b58" />
               (11) 99999-9999
@@ -79,7 +79,7 @@ export function Contact() {
               contato@barber.com
             </a>
           </ContactContent>
-          <SocialLinks>
+          <SocialLinks title="Links das nossas redes sociais">
             <p>Nossas redes sociais</p>
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={20} color="#c38b58" />
@@ -92,7 +92,9 @@ export function Contact() {
               <FaFacebook size={20} color="#c38b58" />
             </a>
           </SocialLinks>
-          <Button type="submit">Marcar horário</Button>
+          <Button title="Clica para marcar horario para corte" type="submit">
+            Marcar horário
+          </Button>
         </ContactContainer>
       </Container>
       <FooterContainer>

@@ -25,7 +25,7 @@ export function Gallery() {
 
   return (
     <>
-      <Container>
+      <Container title="Galeria de fotos da barbershop">
         <Title>Galeria</Title>
         <ImageGallery
           items={galleryData}

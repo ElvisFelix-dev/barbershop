@@ -73,7 +73,7 @@ export function Service() {
       <div style={{ height: '100vh' }}>
         <Heading>Nossos Serviços</Heading>
         <Container>
-          <Card>
+          <Card title="Nome dos cortes, descrição do corte e valor">
             <TitleHair>Cortes de Cabelo</TitleHair>
             {haircuts.map((haircut, index) => (
               <div key={index}>
@@ -86,7 +86,7 @@ export function Service() {
             ))}
           </Card>
 
-          <Card>
+          <Card title="Nome dos cortes, descrição do corte e valor">
             <TitleHair>Cortes de Barba</TitleHair>
             {beardCuts.map((beardCut, index) => (
               <div key={index}>
@@ -99,7 +99,7 @@ export function Service() {
             ))}
           </Card>
 
-          <Card>
+          <Card title="Nome dos cortes, descrição do corte e valor">
             <TitleHair>Outros Serviços</TitleHair>
             {otherServices.map((service, index) => (
               <div key={index}>
@@ -111,7 +111,7 @@ export function Service() {
               </div>
             ))}
           </Card>
-          <Card>
+          <Card title="Nome dos cortes, descrição do corte e valor">
             <TitleHair>Cortes de Cabelo</TitleHair>
             {haircuts.map((haircut, index) => (
               <div key={index}>
@@ -124,7 +124,7 @@ export function Service() {
             ))}
           </Card>
 
-          <Card>
+          <Card title="Nome dos cortes, descrição do corte e valor">
             <TitleHair>Cortes de Barba</TitleHair>
             {beardCuts.map((beardCut, index) => (
               <div key={index}>
@@ -136,7 +136,7 @@ export function Service() {
               </div>
             ))}
           </Card>
-          <Card>
+          <Card title="Nome dos cortes, descrição do corte e valor">
             <TitleHair>Outros Serviços</TitleHair>
             {otherServices.map((service, index) => (
               <div key={index}>
@@ -149,7 +149,7 @@ export function Service() {
             ))}
           </Card>
           <ButtonContainer>
-            <Button>
+            <Button title="Clica para agendar um horario">
               <Link to="/booking">Marcar Horário</Link>
             </Button>
           </ButtonContainer>
